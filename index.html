@@ -1,0 +1,170 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>charity: water</title>
+  <link href="https://fonts.cdnfonts.com/css/proxima-nova-2" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Proxima Nova', Arial, sans-serif;
+      background-color: #7CA6B4;
+      color: #333;
+    }
+
+    /* NAVBAR */
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 2rem;
+      background-color: #7CA6B4;
+    }
+
+    .navbar-left {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .logo img {
+      height: 32px;
+      margin-right: 8px;
+    }
+
+    .nav-links a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+      padding: 5px 10px;
+      border-radius: 4px;
+    }
+
+    .nav-links a.active {
+      background-color: #FFD43B;
+      color: white;
+    }
+
+    .search-box {
+      background-color: white;
+      border-radius: 20px;
+      padding: 5px 10px;
+      display: flex;
+      align-items: center;
+    }
+
+    .search-box input {
+      border: none;
+      outline: none;
+      background: transparent;
+      padding: 5px;
+    }
+
+    /* HERO SECTION */
+    .hero {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 3rem 2rem;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .hero img {
+      width: 480px;
+      max-width: 100%;
+      border-radius: 20px;
+    }
+
+    .hero-content {
+      background: linear-gradient(to right, #fffde4, #fdfdfd);
+      padding: 2rem;
+      border-radius: 20px;
+      max-width: 400px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .hero-content h2 {
+      font-size: 1.8rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+      color: #000;
+    }
+
+    .hero-content p {
+      margin-bottom: 1.5rem;
+      line-height: 1.4;
+    }
+
+    .donate-form {
+      display: flex;
+      gap: 10px;
+    }
+
+    .donate-form input {
+      padding: 10px;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+      flex: 1;
+    }
+
+    .donate-form button {
+      background-color: #F7A600;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 10px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .donate-form button:hover {
+      background-color: #e58e00;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="navbar-left">
+      <div class="logo">
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/6/6b/Charity_Water_logo.svg/1200px-Charity_Water_logo.svg.png" alt="charity water logo">
+        charity: water
+      </div>
+      <nav class="nav-links">
+        <a href="#" class="active">Home</a>
+        <a href="#">About</a>
+        <a href="#">Donate</a>
+        <a href="#">Contact</a>
+      </nav>
+    </div>
+    <div class="search-box">
+      <input type="text" placeholder="Search">
+      <span>🔍</span>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <img src="https://via.placeholder.com/500x300.png?text=Well+Drilling+Image" alt="Water project">
+    <div class="hero-content">
+      <h2>Know where Every Drop Goes</h2>
+      <p>We map your donation’s journey from your wallet to the well, so you can follow the impact in real time.</p>
+      <form class="donate-form">
+        <input type="text" placeholder="enter amount">
+        <button type="submit">Donate Now</button>
+      </form>
+    </div>
+  </section>
+</body>
+</html>
